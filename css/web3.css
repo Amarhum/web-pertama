@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#check{
+    display: none;
+}
+#check:checked ~.menuMobile{
+    left: 0;
+}
+.mobile-menu{
+    padding: 10px;
+    float: right;
+    display: none;
+}
+.menuMobile{
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    position: fixed;
+    width: 250px;
+    background-color: rgb(177, 236, 236, .7);
+    left: -300px;
+    
+}
+.menuMobile h1{
+    background-color: rgb(79, 221, 209);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 9px;
+    font-size: 18px;
+}
+.menuMobile h1:hover{
+    cursor: pointer;
+}
+.menuMobile ul{
+    text-decoration: none;
+}
+.menuMobile ul li{
+    transition: 0.3s;
+    margin-bottom: 10px;
+    text-decoration: none;
+    padding-top: 50px;
+    display: inline-block;
+    width: 249px;
+}
+.menuMobile ul li a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+}
+.menuMobile ul li:hover{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color: rgb(79, 221, 209);
+}
+.container{
+    height: 40px;
+    background-color: rgb(23, 62, 134);
+}
+.container h1{
+    color: rgba(255, 255, 255, 0.973);
+    font-size: medium;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 60px;
+    cursor: pointer;
+    transition: all .5s aese 0s ;
+}
+.container h1:hover{
+    transform: rotate(2deg);
+    
+}
+.container ul{
+    padding: px;
+    display: inline;
+    float: right;
+    
+    margin-right: 60px;
+}
+.container ul li{
+    display: inline-block;
+    margin-left: 6px;
+    padding: 11px;
+}
+.container a{
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.767);
+    text-decoration: none;
+}
+.container .aktif{
+    color: white;
+}
+.container ul li a:hover{
+    background-color: rgb(79, 221, 209);
+    color: rgb(11, 39, 161);
+}
+.banner{
+    height: 530px;
+    background-color: #d7eded;
+}
+.banner img{
+    width: 150px;
+    border-radius: 50%;
+    margin-left: 42%;
+    padding: 30px;
+}
+.banner p{
+    margin-left: 38%;
+}
+.about{
+    height: 517px;
+}
+.col-1{
+    text-align: center;
+    box-sizing: border-box;
+}
+.col{
+    box-sizing: border-box;
+    width: 400px;
+    height: 70px;
+    float: left;
+    margin: 60px;
+    margin-left: 150px;
+    text-align: center;
+}
+.projects{
+    height: 828px;
+    background-color: #d7eded;
+}
+.col-2{
+    box-sizing: border-box;
+    text-align: center;
+}
+.col-3{
+    box-sizing: border-box;
+    width: 33.3%;
+    float: left;
+    height: 250px;
+    text-align: center;
+}
+.col-3 img{
+    padding: 30px;
+    border-radius: 50%;
+}
+.col-3:hover{
+    transform: scale(1.2);
+}
+.col-4{
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    height: 250px;
+    text-align: center;
+}
+.col-4 img{
+    padding: 30px;
+    border-radius: 50%;
+}
+.col-4:hover{
+    transform: scale(1.2);
+}
+.tabel{
+    margin-left: 37%;
+    width: 320px;
+    border: 1px solid;
+    height: 300px;   
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.tabel h2 {
+    margin-left: 85px;
+}
+.col-5{
+    margin: 10px;
+    padding: 5px;
+    width: 290px;
+    box-sizing: border-box;
+}
+.col-5 input{
+    padding: 10px;
+    margin-left: 90px;
+}
+.col-5 p{
+    margin-top: 5px;
+    display: inline-block;
+}
+.footer{
+    text-align: center;
+    height: 30px;
+    background-color: rgba(51, 50, 50, 0.678);
+}
+@media (max-width :768px){
+    .menuMobile{
+        display: block;
+    }
+    .container ul li a{
+        display: none;
+    }
+    .mobile-menu{
+        position: absolute;
+        display: block;
+        top: 1px;
+        right: 10px;
+    }
+    .about .col{
+        width: auto;
+    }
+    svg{
+        margin-top: auto;
+        height: auto;
+        width: auto;
+    }
+    .banner{
+        height: auto;
+        width: auto;
+    }
+    .banner img{
+        text-align: center;
+        width: 150px;
+    }
+    .banner p{
+        text-align: center;
+        margin-left: auto;
+    }
+    .about{
+        width: auto;
+        height: auto;
+    }
+    .projects{
+        width: auto;
+        height: auto;
+    }
+    .contact{
+        width: auto;
+        height: auto;
+    }
+    
+    
+}
