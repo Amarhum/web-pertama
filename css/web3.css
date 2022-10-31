@@ -17,7 +17,7 @@
 .menuMobile{
     top: 0;
     bottom: 0;
-    text-align: center;
+    
     position: fixed;
     width: 250px;
     background-color: rgb(177, 236, 236, .7);
@@ -34,21 +34,24 @@
     cursor: pointer;
 }
 .menuMobile ul{
-    text-decoration: none;
+    justify-content: center;
 }
 .menuMobile ul li{
+    border: 1px solid red;
+    height: 80px;
     transition: 0.3s;
-    margin-bottom: 10px;
-    text-decoration: none;
-    padding-top: 50px;
-    display: inline-block;
     width: 249px;
+    cursor: pointer;
+    
+   
 }
 .menuMobile ul li a{
+    font-size: 18px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: black;
+    text-align: center;
     text-decoration: none;
-    padding: 15px;
+    width: 249px;
 }
 .menuMobile ul li:hover{
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -72,6 +75,7 @@
     
 }
 .container ul{
+   
     padding: px;
     display: inline;
     float: right;
@@ -84,6 +88,7 @@
     padding: 11px;
 }
 .container a{
+    transition: all .5s;
     padding: 10px;
     color: rgba(255, 255, 255, 0.767);
     text-decoration: none;
@@ -100,20 +105,29 @@
     background-color: #d7eded;
 }
 .banner img{
+    box-shadow: 1px 2px 5px 1px;
     width: 150px;
     border-radius: 50%;
     margin-left: 42%;
-    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 .banner p{
-    margin-left: 38%;
+    margin-bottom: 30px;
+    margin-left: 36%;
 }
 .about{
+    
     height: 517px;
+    background-image: url(../img/ogaLaptop.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 48%;
 }
 .col-1{
     text-align: center;
     box-sizing: border-box;
+    
 }
 .col{
     box-sizing: border-box;
@@ -123,6 +137,7 @@
     margin: 60px;
     margin-left: 150px;
     text-align: center;
+    background-color: #eaeaea;
 }
 .projects{
     height: 828px;
@@ -204,22 +219,29 @@
         right: 10px;
     }
     .about .col{
+        background-color: #eaeaea9a; 
         width: auto;
     }
-    svg{
-        margin-top: auto;
-        height: auto;
+    .svg{
+        bottom: 0;
         width: auto;
     }
     .banner{
-        height: auto;
+        height: 390px;
         width: auto;
+    }
+    .col-2{
+        top: 0;
+    }
+    .col-3{
+        width: 50%;
     }
     .banner img{
         text-align: center;
-        width: 150px;
+        width: 20%;
     }
     .banner p{
+        margin-bottom: 90px;
         text-align: center;
         margin-left: auto;
     }
@@ -229,11 +251,16 @@
     }
     .projects{
         width: auto;
-        height: auto;
+        height: 940px;
     }
     .contact{
         width: auto;
         height: auto;
+    }
+    .tabel{
+        padding: 10px;
+        margin-top: 10px;
+        margin-left: 200px;
     }
     
     
